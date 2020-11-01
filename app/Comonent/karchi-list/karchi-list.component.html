@@ -1,0 +1,73 @@
+<div class="text-center"><h1>welcome to Karchi Port Info</h1>
+    <button routerLink='/mainpage' class="btn btn-warning">Back-main-page</button>
+    <button routerLink='/AddAbass' class="btn btn-info">CreateNew</button></div>
+
+<table class=" table table-striped">
+    <thead>
+        <tr>
+            <th>Operations</th>
+            <th>conNumber</th>
+            <th>bilNumber</th>
+            <th>sealNumber</th>
+            <th>contSize</th>
+            <th>contPackage</th>
+            <th>contWidth</th>
+            <th>shipDate</th>
+            <th>karchiDischargDate</th>
+            <th>karchiLoadDate</th>
+            <th>toorkhamWish</th>
+            <th>borderPassDate</th>
+            <th>customJaQand</th>
+            <th>customEnteryDate</th>
+            <th>customOutDate</th>
+            <th>kblDistchedDate</th>
+            <th>biltyList</th>
+            <th>PrivateSundry</th>
+            <th>pakAgent</th>
+            <th>customJawaz</th>
+            <th>accdNumber</th>
+            <th>pakDriverName</th>
+            <th>pakDviverNumber</th>
+            <th>pakTrackNumbert</th>
+            <th>afgDriverName</th>
+            <th>afgDviverNumber</th>
+            <th>afgTrackNumber</th>
+            <th>comment</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= 'let KarachiPort of KarachiPorts'>
+            <td>
+                <button class="btn btn-info">Update</button>
+            </td>
+            <td>{{KarachiPort.conNumber}}</td>
+            <td>{{KarachiPort.bilNumber}}</td>
+            <td>{{KarachiPort.sealNumber}}</td>
+            <td>{{KarachiPort.contSize}}</td>
+            <td>{{KarachiPort.contPackage}}</td>
+            <td>{{KarachiPort.contWidth}}</td>
+            <td>{{KarachiPort.shipDate}}</td>
+            <td>{{KarachiPort.karchiDischargDate}}</td>
+            <td>{{KarachiPort.karchiLoadDate}}</td>
+            <td>{{KarachiPort.toorkhamWish}}</td>
+            <td>{{KarachiPort.borderPassDate}}</td>
+            <td>{{KarachiPort.customJaQand}}</td>
+            <td>{{KarachiPort.customEnteryDate}}</td>
+            <td>{{KarachiPort.customOutDate}}</td>
+            <td>{{KarachiPort.kblDistchedDate}}</td>
+            <td>{{KarachiPort.biltyList}}</td>
+            <td>{{KarachiPort.PrivateSundry}}</td>
+            <td>{{KarachiPort.pakAgent}}</td>
+            <td>{{KarachiPort.customJawaz}}</td>
+            <td>{{KarachiPort.accdNumber}}</td>
+            <td>{{KarachiPort.pakDriverName}}</td>
+            <td>{{KarachiPort.pakDviverNumber}}</td>
+            <td>{{KarachiPort.pakTrackNumbert}}</td>
+            <td>{{KarachiPort.afgDriverName}}</td>
+            <td>{{KarachiPort.afgDviverNumber}}</td>
+            <td>{{KarachiPort.afgTrackNumber}}</td>
+            <td>{{KarachiPort.comment}}</td>
+            
+        </tr>
+    </tbody>
+</table>

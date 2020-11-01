@@ -1,0 +1,85 @@
+
+<div class="text-center"><h1>Welcom to AbassPort</h1>
+    <button routerLink='/mainpage' class="btn btn-warning">Back-main-page</button>
+    <button routerLink='/AddAbass' class="btn btn-info">CreateNew</button>
+    
+</div>
+
+<table class="table table-striped">
+<thead>
+<tr>
+    <th>Update</th>
+    <th>Delete</th>
+    <th>Coninar#</th>
+    <th>Bill#</th>
+    <th>Seal#</th>
+    <th>contSize#</th>
+    <th>contPackage#</th>
+    <th>contWidth#</th>
+    <th>shipDate</th>
+    <th>abassDischargDate</th>
+    <th>abassLoadDate</th>
+    <th>islamQala</th>
+    <th>borderPassDate</th>
+    <th>customHaratNimros</th>
+    <th>customEnteryDate</th>
+    <th>customOutDate</th>
+    <th> kblDistchedDate</th>
+    <th>biltyList</th>
+    <th>PrivateSundry</th>
+    <th> iraniAgent</th>
+    <th>customJawaz</th>
+    <th>accdNumber</th>
+    <th>iraniDriverName</th>
+    <th> iraniDviverNumber</th>
+    <th>iraniTrackNumbert</th>
+    <th>afgDriverName</th>
+    <th>afgDviverNumber</th>
+    <th> afgTrackNumber</th>
+   
+   </tr>
+</thead>
+<tbody>
+
+    <tr *ngFor= "let ContinerAbass of ContinerAb">
+        <td>
+            <button routerLink='/AddAbass/{{ContinerAbass.id}}' class="btn btn-info">Update</button>
+        </td>
+        <td>
+    
+            <button (click)="deleteAbs(ContinerAbass.id)" class="btn btn-danger">Delete</button>
+    </td>
+      
+        <td>{{ContinerAbass.conNumber}}</td>
+       <td> {{ContinerAbass.bilNumber}}</td>
+        <td>{{ContinerAbass.sealNumber}}</td>
+        <td>{{ContinerAbass.contSize}}</td>
+        <td>{{ContinerAbass.contPackage}}</td>
+        <td>{{ContinerAbass.contWidth}}</td>
+        <td>{{ContinerAbass.shipDate}}</td>
+        <td>{{ContinerAbass.abassDischargDate}}</td>
+        <td>{{ContinerAbass.abassLoadDate}}</td>
+        <td>{{ContinerAbass.islamQala}}</td>
+        <td>{{ContinerAbass.borderPassDate}}</td>
+        <td>{{ContinerAbass.customHaratNimros}}</td>
+        <td>{{ContinerAbass.customEnteryDate}}</td>
+        <td>{{ContinerAbass.customOutDate}}</td>
+        <td>{{ContinerAbass. kblDistchedDate}}</td>
+        <td>{{ContinerAbass.biltyList}}</td>
+        <td>{{ContinerAbass.PrivateSundry}}</td>
+        <td>{{ContinerAbass. iraniAgent}}</td>
+        <td>{{ContinerAbass.customJawaz}}</td>
+        <td>{{ContinerAbass.accdNumber}}</td>
+        <td>{{ContinerAbass.iraniDriverName}}</td>
+        <td>{{ContinerAbass. iraniDviverNumber}}</td>
+        <td>{{ContinerAbass.iraniTrackNumbert}}</td>
+        <td>{{ContinerAbass.afgDriverName}}</td>
+        <td>{{ContinerAbass.afgDviverNumber}}</td>
+        <td>{{ContinerAbass. afgTrackNumber}}</td>
+       
+
+</tr>
+
+
+</tbody>
+</table>

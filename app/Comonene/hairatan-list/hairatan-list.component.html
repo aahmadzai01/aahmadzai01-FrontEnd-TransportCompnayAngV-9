@@ -1,0 +1,63 @@
+
+
+<div class="text-center"> <h1>Welcome to the HaritanPort</h1></div>
+
+<table class="table table-triped">
+    <thead>
+        <tr>
+            <th>Cont#</th>
+            <th>Bill#</th>
+            <th>Seal#</th>
+            <th>contSize</th>
+            <th> contPackage</th>
+            <th>contWidth</th>
+            <th>shipDate</th>
+            <th>DischargDate</th>
+            <th>LoadDate</th>
+            <th>customHairatan</th>
+            <th>customEnteryDate</th>
+            <th>customOutDate</th>
+            <th> kblDistchedDate</th>
+            <th>biltyList</th>
+            <th> PrivateSundry</th>
+            <th>customJawaz</th>
+            <th>accdNumber</th>
+            <th> afgDriverName</th>
+            <th> afgDviverNumber</th>
+            <th> afgTrackNumber</th>
+            <th>comment</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let HairatanPort of HairatanPorts">
+            <td>{{HairatanPort.conNumber}}</td>
+            <td> {{HairatanPort.bilNumber}}</td>
+            <td> {{HairatanPort.sealNumber}}</td>
+            <td>{{HairatanPort.contSize}}</td>
+            <td>{{HairatanPort.contPackage}}</td>
+            <td>{{HairatanPort.contWidth}}</td>
+            <td>{{HairatanPort.shipDate}}</td>
+            <td>{{HairatanPort.DischargDate}}</td>
+            <td>{{HairatanPort.LoadDate}}</td>
+            <td>{{HairatanPort.customHairatan}}</td>
+            <td>{{HairatanPort.customEnteryDate}}</td>
+            <td>{{HairatanPort.customOutDate}}</td>
+            <td>{{HairatanPort.kblDistchedDate}}</td>
+            <td>{{HairatanPort.biltyList}}</td>
+            <td>{{HairatanPort.PrivateSundry}}</td>
+            <td>{{HairatanPort.customJawaz}}</td>
+            <td>{{HairatanPort.accdNumber}}</td>
+            <td>{{HairatanPort.afgDriverName}}</td>
+            <td>{{HairatanPort.afgDviverNumber}}</td>
+            <td>{{HairatanPort.afgTrackNumber}}</td>
+            <td>{{HairatanPort.comment}}</td>
+            
+            
+            <td>
+                <button class=" btn btn-info">Update</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

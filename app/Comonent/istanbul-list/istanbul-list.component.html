@@ -1,0 +1,60 @@
+<div class="text-center"><h1>Welcome to istanbul ports</h1></div>
+<div class="contianer">
+<table class="table table-straped">
+    <thead>
+        <tr>
+            <th>trackNumber</th>
+            <th>driverNumber</th>
+            <th>agent</th>
+            <th>contSize</th>
+            <th>contPackage</th>
+            <th>contWidth</th>
+            <th>entryBorder</th>
+            <th>borderPass</th>
+            <th>customHarat</th>
+            <th>customEnteryDate</th>
+            <th>customOutDate</th>
+            <th>kblDistchedDate</th>
+            <th>biltyList</th>
+            <th>PrivateSundry</th>
+            <th>customJawaz</th>
+            <th>accdNumber</th>
+            <th>afgDriverName</th>
+            <th>afgDviverNumber</th>
+            <th>afgTrackNumber</th>
+            <th>comment</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+     <tr *ngFor ='let IstanbulPort of IstanbulPorts'>
+         <td>{{IstanbulPort.trackNumber}}</td>
+         <td>{{IstanbulPort.driverNumber}}</td>
+         <td>{{IstanbulPort.agent}}</td>
+         <td>{{IstanbulPort.contSize}}</td>
+         <td>{{IstanbulPort.contPackage}}</td>
+         <td>{{IstanbulPort.contWidth}}</td>
+         <td>{{IstanbulPort.entryBorder}}</td>
+         <td>{{IstanbulPort.borderPass}}</td>
+         <td>{{IstanbulPort.customHarat}}</td>
+         <td>{{IstanbulPort.customEnteryDate}}</td>
+         <td>{{IstanbulPort.customOutDate}}</td>
+         <td>{{IstanbulPort.kblDistchedDate}}</td>
+         <td>{{IstanbulPort.biltyList}}</td>
+         <td>{{IstanbulPort.PrivateSundry}}</td>
+         <td>{{IstanbulPort.customJawaz}}</td>
+         <td>{{IstanbulPort.accdNumber}}</td>
+         <td>{{IstanbulPort.afgDriverName}}</td>
+         <td>{{IstanbulPort.afgDviverNumber}}</td>
+         <td>{{IstanbulPort.afgTrackNumber}}</td>
+         <td>{{IstanbulPort.comment}}</td>
+         <td>
+            <button class="btn btn-info">Udapte </button>
+
+         </td>
+         
+     </tr>
+
+    </tbody>
+</table>
+</div>
